@@ -13,13 +13,33 @@
         <img src="images/logo.jpg" alt="logo de oribear" id="logo" />
         <nav>
           <ul>
-            <li>Accueil</li>
-            <li>Panier</li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="panier.html">Panier</a></li>
           </ul>
         </nav>
       </header>
-
-      <main></main>
+      <main>
+        <article id="page_produit">
+          <section class="image_nom">
+            <div id="images_secondaire"></div>
+            <img src="" alt="" id="image_principale" />
+            <div>
+              <h2></h2>
+              <p id="price"></p>
+              <select name="couleur" id="couleur-select">
+                <option value="">couleur</option>
+              </select>
+            </div>
+          </section>
+          <section class="description">
+            <h3>Description:</h3>
+            <p id="description"></p>
+          </section>
+          <div class="bouton">
+            <p>Ajouter au panier</p>
+          </div>
+        </article>
+      </main>
     </div>
     <footer>
       <h1>Oribear</h1>
@@ -59,5 +79,7 @@
         </svg>
       </div>
     </footer>
+
+    <script src="js/produit.js"></script>
   </body>
 </html>
