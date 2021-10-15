@@ -18,5 +18,30 @@ fetch(url).then((reponse) =>
     }
     document.querySelector("#couleur-select").innerHTML = option;
     document.querySelector("#description").textContent = data.description;
+
+    document.querySelector(".bouton").addEventListener("click", function () {
+      let commande = {
+        image: data.imageUrl,
+        prix: data.price / 100,
+        nom: data.name,
+        id: data._id,
+      };
+      let produitLocalStorage = JSON.parse(localStorage.getItem("produit"));
+
+      if (produitLocalStorage) {
+        produitLocalStorage.push(commande);
+        localStorage.setItem("produit", JSON.stringify(produitLocalStorage));
+      } else {
+        produitLocalStorage = [];
+        produitLocalStorage.push(commande);
+        localStorage.setItem("produit", JSON.stringify(produitLocalStorage));
+      }
+
+      document.querySelector(".bouton p").textContent =
+        "Article ajouté au panier ✔";
+      setTimeout(function () {
+        document.querySelector(".bouton p").textContent = "Ajouter au panier";
+      }, 1500);
+    });
   })
 );

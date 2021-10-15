@@ -185,11 +185,18 @@ h3 {
 .bouton {
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none;
   margin-top: 3rem;
   margin-bottom: 3rem;
   background-color: #261623;
   padding: 0.3rem 2rem 0.5rem 2rem;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.bouton:hover {
+  transform: scale(1.07);
+  transition: all 0.2s;
 }
 
 .bouton p {
@@ -205,4 +212,111 @@ h4 {
   font-family: "belligerent";
   font-size: 3rem;
   font-weight: initial;
+}
+
+#panier {
+  margin-bottom: 3rem;
+}
+
+#vide {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+table {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+th {
+  width: 33%;
+  padding-bottom: 2rem;
+}
+td {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+td img {
+  width: auto;
+  height: 100px;
+}
+#vide-bouton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: #261623;
+  padding: 0.3rem 2rem 0.5rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#vide-bouton:hover {
+  transform: scale(1.07);
+  transition: all 0.2s;
+}
+#vide-bouton p {
+  color: #f3e9f1;
+  text-align: center;
+  text-decoration: none;
+}
+
+form {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formulaire {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulaire label {
+  text-align: center;
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+}
+
+.formulaire input {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: solid #261623 1px;
+  margin-bottom: 0.5rem;
+}
+#total {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+#formulaire .bouton {
+  width: 30%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+
+#erreur {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: red;
+}
+/**** PAGE RECAP****/
+#header-recap {
+  justify-content: center;
+}
+#recap {
+  border: solid 2px #261623;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+#recap p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#retour-accueil {
+  width: 20%;
 }
