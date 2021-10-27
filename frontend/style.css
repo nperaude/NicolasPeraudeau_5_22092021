@@ -226,15 +226,20 @@ h4 {
 table {
   width: 100%;
   margin-top: 2rem;
+  border-collapse: collapse;
 }
 
 th {
   width: 33%;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: solid 1px #261623;
 }
 td {
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border: solid 1px #261623;
 }
 td img {
   width: auto;
@@ -304,7 +309,7 @@ form {
 #header-recap {
   justify-content: center;
 }
-#recap {
+.recap {
   border: solid 2px #261623;
   width: 80%;
   margin-left: auto;

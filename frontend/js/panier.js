@@ -4,7 +4,7 @@ const sectionFormulaire = document.querySelector("#formulaire");
 let total = 0;
 
 if (produitLocalStorage === null) {
-  sectionPanier.innerHTML = '<p id="vide">vide</p>';
+  sectionPanier.innerHTML = '<p id="vide">Vide</p>';
 } else {
   let htmlPanier = "<table><tr><th>Produit</th><th>Nom</th><th>Prix</th></tr>";
   for (let produit of produitLocalStorage) {
@@ -63,15 +63,15 @@ function emailValid(email) {
 }
 
 function textValid(value) {
-  return /^[A-Za-z]{2,20}$/.test(value);
+  return /^[A-Za-zèéàêë]{2,20}$/.test(value);
 }
 
 function adressValid(value) {
-  return /^([0-9]*) ([a-zA-Z- ]*)$/.test(value);
+  return /^([0-9]*) ([a-zA-Z-èéàêë ]*)$/.test(value);
 }
 
 function cityValid(value) {
-  return /^([a-zA-Z- ]*)$/.test(value);
+  return /^([a-zA-Z-èéàêë ]*)$/.test(value);
 }
 
 firstName.addEventListener("input", function (e) {
