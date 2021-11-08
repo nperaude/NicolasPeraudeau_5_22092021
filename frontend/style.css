@@ -146,6 +146,11 @@ h2 {
   margin-top: 1.5rem;
   margin-left: 2rem;
 }
+#quantité {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
 select {
   background-color: #f3e9f1;
   color: #261623;
@@ -154,6 +159,9 @@ select {
   border: solid 2px #261623;
   margin-left: 2rem;
   margin-top: 2rem;
+}
+#quantité-select {
+  margin-top: 0.5rem;
 }
 
 .description {
@@ -182,11 +190,18 @@ h3 {
   margin-top: 1.5rem;
 }
 
+#choix {
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+  margin-top: 3rem;
+}
+
 .bouton {
   margin-left: auto;
   margin-right: auto;
   text-decoration: none;
-  margin-top: 3rem;
+  margin-top: 0.2rem;
   margin-bottom: 3rem;
   background-color: #261623;
   padding: 0.3rem 2rem 0.5rem 2rem;
@@ -230,7 +245,7 @@ table {
 }
 
 th {
-  width: 33%;
+  width: 20%;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border: solid 1px #261623;
